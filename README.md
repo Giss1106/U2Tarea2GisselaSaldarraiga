@@ -105,13 +105,16 @@ card.addEventListener('card-click', (event) => {
 ## Cómo usar el componente
 
 1. Incluir el script del componente:
- ![Script del componente en el index](./captura/Scriptenelcomponente.png)
+
+   ![Script del componente en el index](./captura/Scriptenelcomponente.png)
 
 2. Insertar la tarjeta en HTML:
- ![Tarjeta HTML](./captura/tarjeta.png)
+
+   ![Tarjeta HTML](./captura/tarjeta.png)
 
 3. Escuchar el evento personalizado para reaccionar a la selección:
- ![Evento Personalizado](./captura/EventoPersonalizado.png)
+
+   ![Evento Personalizado](./captura/EventoPersonalizado.png)
 
 
 ---
