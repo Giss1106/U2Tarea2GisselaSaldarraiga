@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Componente espe-featured-card Gissela Saldarriaga</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #FFFCC0 0%, #00B140 100%);
+      font-family: 'Roboto', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    main {
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <espe-featured-card 
+      title="Componente espe-featured-card Gissela Saldarriaga"
+      description="Tarjeta destacada que muestra un título, descripción y al hacer clic, alterna el estado `highlighted`, emite un evento y aplica una animación visual."
+      image="./gato.png">
+    </espe-featured-card>
+
+    <div id="mensaje" style="margin-top: 1rem; font-size: 1.2rem; color: #000000; font-weight: bold;"></div>
+
+    <script type="module" src="./src/espe-featured-card.js"></script>
+    <script>
+      const card = document.querySelector('espe-featured-card');
+      const mensaje = document.getElementById('mensaje');
+
+      card.addEventListener('card-click', (event) => {
+        if (event.detail.highlighted) {
+          mensaje.textContent = `Tarjeta seleccionada`;
+        } else {
+          mensaje.textContent = ''; 
+        }
+      });
+    </script>
+  </main>
+</body>
