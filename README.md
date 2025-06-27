@@ -121,8 +121,14 @@ card.addEventListener('card-click', (event) => {
 
 ## Capturas de pantalla
 
-![Componente activo](./captura/espe-featured-card-activo.png)  
+- Componente Inactivo sin realizar ningun click
+
 ![Componente inactivo](./captura/espe-featured-card-inactivo.png)
+
+- Componente Activo despues de realizar un click
+
+![Componente activo](./captura/espe-featured-card-activo.png)  
+
 
 ---
 
